@@ -27,4 +27,18 @@ export default rootReducer;
 ```
 
 ###Containers folder
-__```Book_list.js``` depends on the state so had to be "promoted" in the container folder__
+```Book_list.js``` __depends on the state so had to be "promoted" in the container folder__
+####difference with components folder:
+```import { connect } from 'react-redux';``` to be able to use the ```connect``` function linking React and Redux libraries
+```
+function mapStateToProps( state ) {
+  // Whatever it returned will show up as props inside of BookList
+  return {
+    books: state.books
+  };
+}
+```
+
+```export default connect( mapStateToProps )( BookList )```
+
+__in ```app.js``` make sure BookList is rendered.__
