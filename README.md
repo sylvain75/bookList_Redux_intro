@@ -1,6 +1,8 @@
 #App State with redux
 
-__Redux serves the application state__
+__Component State !== Application State
+
+__Redux in charge of the application state__
 
 __React provides views to display state__
 
