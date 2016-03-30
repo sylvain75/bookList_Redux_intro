@@ -1,3 +1,10 @@
+#From EggHead
+- State tree is redonding (can't modify)
+- Action is the representation of the change of the data
+	- need to have type property (can't be undefined)
+- We can change the ```State``` tree by dispatching an ```Action``` (JS Object)
+- Component dispatch ```action```
+
 #App State with redux
 
 __Component State !== Application State
